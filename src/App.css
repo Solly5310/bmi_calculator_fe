@@ -1,38 +1,205 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+
+
+
 .App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.Tabs {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background: #053742;
+    margin: 3.5rem auto 1.5rem;
+    margin-top: 0px;
+    padding: 2rem 1rem;
+    color: #E8F0F2;
+ 
+}
+
+
+
+
+ul.nav {
+    width: 60%;
+    margin-top: 20%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #39A2DB;
+    border-radius: 4px;
+    padding-left: 0px;
+   
+  }
+  ul.nav li {
+    width: 50%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+  }
+  ul.nav li:nth-child(2) {
+    border-radius: 4px;
+  }
+  ul.nav li:hover {
+    background: rgba(50, 224, 196, 0.15);
+  }
+  ul.nav li.active {
+    background: #39A2DB;
+  }
+
+
+
+  .FirstTab p, .SecondTab p {
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.formContainer {
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.formContainer > div {
+    float: left;
+}
+
+.measureInput {
+    padding:3px 0px;
+    border-radius: 4px;
+    border: 1px solid #39A2DB;
+    margin-bottom: 5px;
+}
+
+form {
+    display: inline-grid
+}
+
+
+
+.FirstTab {
+    margin-top: 10%;
+    width: 25%;
+    margin-left: 37.5%;
+    margin-right:37.5%;
+    border: 1px solid #39A2DB;
+    border-radius: 4px;
+}
+
+.submitButton {
+    width: 100%;
+    margin-bottom: 5px;
+    background: #39A2DB;
+    border: 1px solid #39A2DB;
+    border-radius: 4px;
+    color: white;
+    height: 20px
+}
+
+.submitButton:hover {
+    background: rgba(50, 224, 196, 0.15);
+    transition: all 0.7s;
+
+}
+
+.submitButton:active {
+    transform: scale(0.90);
+    transition: all 0.2s;
+}
+
+.inputs > * {
+    min-width: 120px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+    min-width: 4400px
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @media (max-width: 828px) {
+    .FirstTab {
+      margin-top: 10%;
+      width: 50%;
+      margin-left: 25%;
+      margin-right: 25%;
+      border: 1px solid #39A2DB;
+      border-radius: 4px;
   }
-  to {
-    transform: rotate(360deg);
+   }
+
+
+
+   @media (max-width: 300px) {
+    .FirstTab {
+      margin-top: 10%;
+      width: 75%;
+      margin-left: 12.5%;
+      margin-right: 12.5%;
+      border: 1px solid #39A2DB;
+      border-radius: 4px;
   }
-}
+
+
+  l.nav {
+    width: 100%;
+    margin-top: 20%;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #39A2DB;
+    border-radius: 4px;
+    padding-left: 0px;
+
+  }
+
+
+  
+  ul.nav li {
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+  }
+  ul.nav li:nth-child(2) {
+    border-radius: 4px;
+  }
+  ul.nav li:hover {
+    background: rgba(50, 224, 196, 0.15);
+  }
+  ul.nav li.active {
+    background: #39A2DB;
+  }
+
+
+
+   }
