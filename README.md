@@ -20,5 +20,5 @@ Initial scope for backend:
 - Open your IDE and open the root folder
 - Enter npm install in terminal
 - Once all dependencies are installed, enter npm start in terminal
-- The frontend will then be working, simply download the frontend and follow steps listed in its read me:
+- The frontend will then be working, simply download the backend and follow steps listed in its read me:
     - https://github.com/Solly5310/bmi_calculator_BE
