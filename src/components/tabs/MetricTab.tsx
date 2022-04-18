@@ -28,7 +28,7 @@ const handleHeightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(e)
     //console.log(e.currentTarget)
     
-    let url = `http://52.64.17.31:5000/weight/metric?weight=${weight}&height=${height}`
+    let url = `http://localhost:5000/weight/metric?weight=${weight}&height=${height}`
     
     const {data} = await axios.get(url)
     const bmi = data.bmi
